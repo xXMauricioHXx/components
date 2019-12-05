@@ -1,7 +1,10 @@
 import React from "react";
+import './App.css';
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import Buttons from "./screens/Buttons";
-import './App.css';
+import Inputs from './screens/Inputs';
+
+
 
 function App() {
   return (
@@ -9,12 +12,12 @@ function App() {
       <Router>
         <div className="row">
           <div className="col-xs-12 col-md-2 menu p-0">
-            <ul>
+            <ul className="p-0 m-0">
               <li>
                 <Link to="/buttons">Buttons</Link>
               </li>
               <li>
-                <Link to="/buttons">Buttons</Link>
+                <Link to="/inputs">Inputs</Link>
               </li>
             </ul>
           </div>
@@ -22,6 +25,9 @@ function App() {
             <Switch>
               <Route path="/buttons">
                 <Buttons />
+              </Route>
+              <Route path="/inputs">
+                <Inputs />
               </Route>
             </Switch>
           </div>

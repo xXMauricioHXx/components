@@ -1,0 +1,20 @@
+.button-primary {
+  padding: var(--button-medium-padding);
+  background-color: var(--primary-button-bg)!important;
+  border-color: var(--primary-button-bg)!important;
+  border-radius: 0px!important;
+  -webkit-box-shadow: 0px 5px 4px 0px rgba(168, 168, 168, 1);
+  -moz-box-shadow: 0px 5px 4px 0px rgba(168, 168, 168, 1);
+  box-shadow: 0px 5px 4px 0px rgba(168, 168, 168, 1);
+  transition: 0.5s;
+}
+
+.button-primary:hover {
+  background-color: var(--primary-button-bg-hover)!important;
+}
+
+@media(max-width: 576px) {
+  .button-primary {
+    width: 100%;
+  }
+}

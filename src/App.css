@@ -1,3 +1,12 @@
+:root {
+  /* Button */
+  --button-medium-padding: .6rem 2.5rem!important;
+  --primary-button-bg: #f42d4b;
+  --primary-button-bg-hover: #bd2d43;
+  --default-button-bg: #bdbdbd;
+  --default-button-bg-hover: #a6a6a6;
+}
+
 .menu {
   height: 100vh;
   background-color: #e3e3e3;

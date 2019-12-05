@@ -1,0 +1,12 @@
+pre {
+  background-color: #e3e3e3;
+  width: 45%;
+  padding: 1rem;
+  border-radius: 5px;
+}
+
+@media (max-width: 576px) {
+  pre {
+    width: 100%;
+  }
+}

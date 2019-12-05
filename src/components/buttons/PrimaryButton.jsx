@@ -1,11 +1,12 @@
 import React from "react";
-import "./PrimaryButton.css";
+import Pre from '../Pre';
+import "../styles/PrimaryButton.css";
 
 const PrimaryButton = () => {
   return (
     <div>
-      <pre>&lt;button className="btn btn-primary"&gt;Button&lt;/button&gt;</pre>
-      <button className="btn btn-primary">Button</button>
+      <Pre content={`<button className="btn btn-primary button-primary">Button</button>`} />
+      <button className="btn btn-primary button-primary">Button</button>
     </div>
   );
 };
