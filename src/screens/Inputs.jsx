@@ -1,8 +1,8 @@
 import React from "react";
-import "./Buttons.css";
-import TextInput from "../components/inputs/TextInput";
-
-class Buttons extends React.Component {
+import "./Inputs.css";
+import Input from "../components/inputs/Input";
+import Select from '../components/inputs/Select';
+class Inputs extends React.Component {
   render() {
     return (
       <div>
@@ -10,12 +10,30 @@ class Buttons extends React.Component {
         <ul className="p-0">
           <li>
             <h3>Text</h3>
-            <TextInput />
-          </li>          
+            <Input
+              placeholder="Your e-mail"
+              required={true}
+              type="email"
+              label="E-mail"
+            />
+          </li>
+          <li>
+            <h3>Password</h3>
+            <Input
+              placeholder="Your password"
+              required={true}
+              type="password"
+              label="Password"
+            />
+          </li>
+          <li>
+            <h3>Selects</h3>
+            <Select />
+          </li>
         </ul>
       </div>
     );
   }
 }
 
-export default Buttons;
+export default Inputs;

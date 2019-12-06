@@ -1,5 +1,5 @@
 import React from 'react';
-import './Pre.css';
+import './styles/Pre.css';
 const Pre = (props) => {
   return (<pre>{props.content}</pre>)
 }

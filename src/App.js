@@ -10,8 +10,8 @@ function App() {
   return (
     <div className="container-fluid">
       <Router>
-        <div className="row">
-          <div className="col-xs-12 col-md-2 menu p-0">
+        <div className="row position-relative">
+          <div className="col-xs-12 col-md-2 menu p-0 position-fixed">
             <ul className="p-0 m-0">
               <li>
                 <Link to="/buttons">Buttons</Link>
@@ -21,7 +21,7 @@ function App() {
               </li>
             </ul>
           </div>
-          <div className="col-xs-12 col-md-10">
+          <div className="col-xs-12 col-md-10 content">
             <Switch>
               <Route path="/buttons">
                 <Buttons />
