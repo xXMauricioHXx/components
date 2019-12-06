@@ -8,12 +8,14 @@ const Select = props => {
       <Pre
         content={`
 <form>
-  <div class="form-group">
+  <div className="form-group">
     <label>
       {props.label} {props.required && <span>*</span>}
     </label>
-    <select class="form-control">
-      <option>Default select</option>
+    <select className="form-control">
+      {props.items.map((item, index) => (
+        <option key={index}>{item}</option>
+      ))}
     </select>
   </div>
 </form>
@@ -24,8 +26,10 @@ const Select = props => {
           <label>
             {props.label} {props.required && <span>*</span>}
           </label>
-          <select class="form-control">
-            <option>Default select</option>
+          <select className="form-control">
+            {props.items.map((item, index) => (
+              <option key={index}>{item}</option>
+            ))}
           </select>
         </div>
       </form>

@@ -2,6 +2,8 @@ import React from "react";
 import "./Inputs.css";
 import Input from "../components/inputs/Input";
 import Select from '../components/inputs/Select';
+import TextArea from '../components/inputs/TextArea';
+
 class Inputs extends React.Component {
   render() {
     return (
@@ -27,8 +29,12 @@ class Inputs extends React.Component {
             />
           </li>
           <li>
-            <h3>Selects</h3>
-            <Select />
+            <h3>Select</h3>
+            <Select items={['Option 1', 'Option 2']} label="Selects" required={true}/>
+          </li>
+          <li>
+            <h3>Text Area</h3>
+            <TextArea label="Text Area" required={true}/>
           </li>
         </ul>
       </div>

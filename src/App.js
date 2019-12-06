@@ -3,7 +3,7 @@ import './App.css';
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import Buttons from "./screens/Buttons";
 import Inputs from './screens/Inputs';
-
+import Cards from './screens/Cards';
 
 
 function App() {
@@ -19,6 +19,9 @@ function App() {
               <li>
                 <Link to="/inputs">Inputs</Link>
               </li>
+              <li>
+                <Link to="/cards">Cards</Link>
+              </li>
             </ul>
           </div>
           <div className="col-xs-12 col-md-10 content">
@@ -28,6 +31,9 @@ function App() {
               </Route>
               <Route path="/inputs">
                 <Inputs />
+              </Route>
+              <Route path="/cards">
+                <Cards />
               </Route>
             </Switch>
           </div>
