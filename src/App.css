@@ -43,3 +43,8 @@
 .container-width {
   width: 18rem;
 }
+
+.screens ul li {
+  display: block;
+  padding-bottom: 2rem;
+}

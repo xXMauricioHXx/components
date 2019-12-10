@@ -1,5 +1,4 @@
 import React from "react";
-import "./Inputs.css";
 import Input from "../components/inputs/Input";
 import Select from '../components/inputs/Select';
 import TextArea from '../components/inputs/TextArea';
@@ -7,7 +6,7 @@ import TextArea from '../components/inputs/TextArea';
 class Inputs extends React.Component {
   render() {
     return (
-      <div>
+      <div className="screens">
         <h1>Inputs: </h1>
         <ul className="p-0">
           <li>

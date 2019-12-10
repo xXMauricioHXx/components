@@ -4,7 +4,7 @@ import "../styles/Inputs.css";
 
 const Input = props => {
   return (
-    <div>
+    <div className="input-container">
       <Pre
         content={`
 <form>

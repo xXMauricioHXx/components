@@ -1,11 +1,10 @@
 import React from "react";
-import "./Buttons.css";
 import Button from '../components/buttons/Button';
 
 class Buttons extends React.Component {
   render() {
     return (
-      <div>
+      <div className="screens">
         <h1>Buttons: </h1>
         <ul className="p-0">          
           <li>

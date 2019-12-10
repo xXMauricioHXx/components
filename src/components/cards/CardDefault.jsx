@@ -12,13 +12,13 @@ const CardDefault = props => {
   <div className="card-body">
     <h5 className="card-title">{props.title}</h5>
     <p className="card-text">{props.content}</p>
-    <button className={\`btn btn-primary button-primary\`}>Go To</button>
+    <Button value="Go To" type="button-primary" />
   </div>
 </div>
       `}
       />
       <div class="container-width">
-        <div className="card">
+        <div className="card card-container">
           <img src={props.img} className="card-img-top" alt="..." />
           <div className="card-body">
             <h5 className="card-title">{props.title}</h5>

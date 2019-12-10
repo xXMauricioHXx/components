@@ -1,0 +1,9 @@
+.navbar {
+  padding: 1.5rem 1rem;
+}
+
+.navbar-nav li {
+  display: inline!important;
+  padding-bottom: 0px!important;
+  padding: 0px 2rem;
+}
